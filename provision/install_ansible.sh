@@ -200,7 +200,7 @@ cat <<'EOF' >  /home/vagrant/ansible/install_github_runner.yml
   tasks:
     - name: Install dependencies
       apt:
-        name: [ "curl", "tar", "jq", "ca-certificates" ]
+        name: [ "curl", "tar", "unzip", "jq", "ca-certificates" ]
         state: present
         update_cache: yes
 
