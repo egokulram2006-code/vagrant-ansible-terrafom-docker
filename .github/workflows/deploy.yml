@@ -17,8 +17,10 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.6.6
+          terraform_wrapper: false
 
-      - name: Init Terraform
+
+      - name: Init Terraform  
         working-directory: Iac-deployment
         run: terraform init
 
